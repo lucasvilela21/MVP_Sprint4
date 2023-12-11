@@ -1,0 +1,76 @@
+body,
+ul,
+li {
+    font-family: "Tahoma", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(225, 222, 199);
+    text-align: center;
+    width: 100%;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    background-color: rgb(35, 32, 24);
+    display: inline-block;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.newItem {
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    text-align: center; /* Center the input and button */
+}
+
+.newItem input {
+    margin: 5px; /* Adjust margin as needed */
+}
+
+.newItem span {
+    margin: 5px; /* Adjust margin as needed */
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px; /* Adjust padding as needed */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Change the text for the "Diagnosticar" button to "Avaliar vinho!" */
+.newItem span:after {
+    content: "Avaliar vinho!";
+}
+
+.items {
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    overflow-x: auto; /* Add horizontal scrollbar if necessary */
+}
+
+.items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.items th,
+.items td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.items th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Wine Discover</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Bem-Vindo ao AI Wine Discover</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para avaliar vinhos.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do vinho e clicar em "Diagnosticar".</p>
+        </div>
+        <!-- <div class="banner">
+            <img src="img/home.jpeg">
+        </div> -->
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newFA" placeholder="Fixed acidity">
+        <input type="text" id="newVA" placeholder="volatile acidity">
+        <input type="text" id="newCA" placeholder="citric acid">
+        <input type="text" id="newRS" placeholder="residual Sugar">
+        <input type="text" id="newCHL" placeholder="Chlorides">
+        <input type="text" id="newFSD" placeholder="Free Sulfur Dioxide">
+        <input type="text" id="newTSD" placeholder="Total Sulfur Dioxide">
+        <input type="text" id="newDENS" placeholder="Density">
+        <input type="text" id="newPH" placeholder="PH">
+        <input type="text" id="newSLP" placeholder="Sulphates">
+        <input type="text" id="newALC" placeholder="Alcohol">
+        <input type="text" id="newQLT" placeholder="Quality">
+        <span onclick="newItem()" class="addBtn"></span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Fixed acidity</th>
+                <th>volatile acidity</th>
+                <th>citric acid</th>
+                <th>residual Sugar</th>
+                <th>Chlorides</th>
+                <th>Free Sulfur Dioxide</th>
+                <th>Total Sulfur Dioxide</th>
+                <th>Density</th>
+                <th>PH</th>
+                <th>Sulphates</th>
+                <th>Alcohol</th>
+                <th>Quality</th>
+                <th>Is red?</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+                <!-- <th><img src="img/edit.png" width="15" height="15"></th> -->
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
